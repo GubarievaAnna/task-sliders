@@ -1,3 +1,5 @@
+// $('.sliderModal').slick('setPosition'); обнуление очередности
+
 $('.slider').slick({
     arrows: false,
     dots: true,
