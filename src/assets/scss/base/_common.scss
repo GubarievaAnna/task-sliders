@@ -13,6 +13,7 @@ body {
   color: var(--primary-txt-cl);
   font-size: 16px;
   line-height: 1.5;
+  padding: 50px;
 }
 
 address {
@@ -24,16 +25,9 @@ h2,
 h3,
 h4,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
-p {
-  margin-bottom: 20px;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
 
 img {
   display: block;
@@ -41,41 +35,15 @@ img {
   height: auto;
 }
 
-.link {
-  color: inherit;
+a {
   text-decoration: none;
-  transition: color var(--fast) linear;
-
-  &:hover,
-  &:focus {
-    color: var(--secondary-txt-cl);
-  }
 }
 
-.list {
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-.scroll-hidden {
-  overflow: hidden;
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 button {
@@ -87,41 +55,3 @@ button {
   cursor: pointer;
 }
 
-.section-title {
-  margin-bottom: 24px;
-
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.2;
-  text-align: center;
-
-  color: var(--secondary-txt-cl);
-
-  @include mq(tablet) {
-    margin-bottom: 30px;
-    font-size: 36px;
-  }
-  @include mq(desktop) {
-    margin-bottom: 40px;
-    font-size: 48px;
-  }
-}
-
-.subtitle {
-  margin-bottom: 24px;
-
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.5;
-
-  text-align: center;
-
-  color: var(--secondary-txt-cl);
-}
-
-.logo {
-  @include mq(tablet) {
-    width: 100px;
-    height: 30px;
-  }
-}
